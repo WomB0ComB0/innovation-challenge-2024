@@ -1,0 +1,16 @@
+{
+  "name": "@mobile/components",
+  "main": "src/index.ts",
+  "dependencies": {
+    "color": "^4.2.3"
+  },
+  "devDependencies": {
+    "@types/color": "^3.0.6",
+    "clipboardy": "^4.0.0",
+    "plop": "^4.0.1"
+  },
+  "scripts": {
+    "generate": "cross-env NODE_OPTIONS='--import tsx' plop --plopfile=plopfile.ts",
+    "copy-types": "node ./scripts/copy-types.mjs"
+  }
+}
